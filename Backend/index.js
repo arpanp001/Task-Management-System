@@ -12,10 +12,10 @@ const app=express()
 DbCon()
 
 app.use(cors({
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: [task-management-front-end-ten.vercel.app"],
     methods: ["POST","GET"],
     credentials: true,
-    origin: 'http://localhost:5173'  // Replace with your frontend URL
+    // origin: 'http://localhost:5173'  // Replace with your frontend URL
 }));
 app.use(cookieParser())
 app.use(express.json())
